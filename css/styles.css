@@ -92,13 +92,13 @@ body {
     width: 100%; 
     text-align: center;
     margin-top: 105px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
 .main-div2 {
     display: inline-block; 
     margin: 0 auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
  }
 
  /* .clear-div {
@@ -108,7 +108,7 @@ body {
 .main-div3 {
   display: inline-block; 
   margin: 0 auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 /* DivTable.com -------------------------------------------*/
@@ -124,7 +124,7 @@ body {
 	display: table-header-group;
 }
 .divTableCell, .divTableHead {
-	border: 1px solid #999999;
+	/* border: 1px solid #999999; */
 	display: table-cell;
 	padding: 3px 10px;
 }
