@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MOBY deployment">                                   <!-- Description (basic name/content that must be added) -->
+    <meta name="keywords" content="MOBY, Marine Optical Buoy, Ocean Color, Calibration">  <!-- Keywords (basic name/content that must be added) -->
+    <meta name="author" content="Stephanie Flora">                                        <!-- Author (basic name/content that must be added) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOBY</title>
+    <!-- https://fonts.google.com/?selection.family=Open+Sans -->
+    <!-- In css use  font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- This should be the lost find in the head -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+ </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img  class="logo" src="img\mobylogo.png" alt="logo">
+            <div class="nav-div">
+                <!-- INFO dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">Info</button>
+                    <div class="dropdown-content">
+                        <a href="#">Buoy info</a>
+                        <a href="#">Buoy Status</a>
+                        <a href="position">Current Position</a>                    
+                        <a href="#">Data Check</a> 
+                    </div>
+                </div>
+
+                <!-- DATA dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">CoastWatch Data</button>
+                    <div class="dropdown-content">
+                        <a href="#">Satellite Weighted</a>
+                        <hr>
+                        <a href="#">ASCII spectral</a>                  
+                    </div>
+                </div>
+                
+                <!-- Meta dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">Meta Data</button>
+                    <div class="dropdown-content">
+                        <a href="#">GPS Position</a>
+                        <a href="#">LINUX LOG</a>
+                        <a href="#">Variable Auxiliary</a>
+                        <a href="#">Internal Reference Lamps</a>
+                        <a href="#">Blue-Red Offset</a>
+                        <a href="#">Xeos Rover</a>
+                        <hr>
+                        <a href="#">MOBY Weather</a>
+                        <a href="#">Lanai Weather</a>
+                        <a href="#">Event Log</a>
+                    </div>
+                </div>
+
+                <!-- Meta dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">File Graphs</button>
+                    <div class="dropdown-content">
+                        <a href="#">Hourly MOBY Files</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ---END OF HEAR/NAV --------------------------------------------- -->
+    <main>
+        <div class="main-div">
+            <div class="main-div2">
+                <h1 class="main-h1">MOBY Status</h1>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                                <div class="divTableCell">&nbsp;
+                                    <!-- Start of colored status boxes -->
+                                    <div class="status-box mos-tt7 tooltip" style="background-color:#00FF00" >
+                                        <p><strong>MOS TT7</strong><hr>11.63 V</p>
+                                        <span class="tooltiptext">Voltage measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box linux-tt7 tooltip" style="background-color:#00FF00">
+                                        <p><strong>Linux TT7</strong><hr>12.0731 V</p>
+                                        <span class="tooltiptext">Voltage measurements for the last day of the run_mos and batt_maint log files </span>
+                                    </div>
+
+                                    <div class="status-box linux-mos-tt7 tooltip" style="background-color:#00FF00">
+                                        <p><strong>Linux->MOS TT7</strong><hr>11.63 V</p>
+                                        <span class="tooltiptext">ADC MOS Voltage measurements stored in the run_mos linux log files </span>
+                                    </div>
+
+                                    <div class="status-box blue-array-c tooltip" style="background-color:#00FF00">
+                                        <p><strong>B array temp</strong><hr>-32 C</p>
+                                        <span class="tooltiptext">Mean blue array measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box red-array-c tooltip" style="background-color:#00FF00">
+                                        <p><strong>R array temp</strong><hr>-32 C</p>
+                                        <span class="tooltiptext">Mean red array measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box tilt tooltip" style="background-color:#00FF00">
+                                        <p><strong>Total tilt</strong><hr>5.12 deg</p>
+                                        <span class="tooltiptext">Mean total tilt measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box rel-hum tooltip" style="background-color:#00FF00">
+                                        <p><strong>Rel  Hum</strong><hr>4 %</p>
+                                        <span class="tooltiptext">Relative humidity measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box mo3files tooltip" style="background-color:#00FF00">
+                                        <p><strong>MO3 files downloaded</strong><hr>3</p>
+                                        <span class="tooltiptext">Number of MO3 files downloaded and date of last download</span>
+                                    </div>
+
+                                    <div class="status-box logfiles tooltip" style="background-color:#00FF00">
+                                        <p><strong>LNX log files downloaded</strong><hr>35</p>
+                                        <span class="tooltiptext">Number of log files downloaded and date of last download</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                  <p align="left">Last set of MO3 files downloaded: <strong>20021020.mo3 20021022.mo3 20021023.mo3</strong></p>  
+                                  <p align="left">MOS TT7 Mains Voltage: <strong>11.6117</strong> (last) <strong>11.5341</strong> (1 day mean) <strong>11.4957</strong> (1 day min) 11.6178 (1 day max)</p>
+                                  <hr>
+                                  <p align="left">Reading for the last day of the run_mos and batt_maint log files: <br>
+                                    U0C0, main battery voltage:              = 12.2532<br>
+                                    U0C7, falcon power supply bus:           = 11.9554<br>
+                                    L0C12, lower battery 1 voltage:          = 12.8067<br>
+                                    L0C13, lower battery 2 voltage:          = 12.7367<br>
+                                    L0C14, lower battery 3 voltage:          = 12.9467<br>
+                                    L0C15, lower battery 4 voltage:          = 12.96<br>
+                                    U0C1, heatsink temperature:              = 24.9929<br>
+                                    U0C2, case air temperature:              = 24.9854<br>
+                                    U0C3, case humidity:                     = 40.0561<br>
+                                    U0C4, +5APwr:                            = 5.0675<br>
+                                    step time server                         = NaN<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                        <p>Position Map</p>
+                                        <img class="map-img zoom" src="img\nlnx2_09_map3.png" alt="MOBY map" /> 
+                                    </div>
+                                    <div class="status-box">
+                                        <p>TT7 Main V</p>
+                                        <img class="map-img zoom" src="img\nv_17.png" alt="TT7 borad temperature" /> 
+                                    </div>
+                                    <div class="status-box">
+                                        <p>Main battery voltages</p>
+                                        <img class="map-img zoom" src="img\nx_020p01_001_20days.png" alt="Main battery voltages" /> 
+                                    </div>
+                                    <div class="status-box">
+                                        <p>4 Lower Battery V</p>
+                                        <img class="map-img zoom" src="img\nx_020p08_001.png" alt="4 Lower Battery" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">  
+<pre>The last 10 batteries charged and the number of hours of daylight the charging occured in: 
+ <strong> Local Start Time           Local Stop Time    Battery       Total Charging    Daylight Charging      sum of cos(zen)</strong>
+09-Feb-2020  8:10:52 AM   09-Feb-2020 10:41:18 AM      Upper                2.507                2.507                5.365
+09-Feb-2020 11:40:42 AM   09-Feb-2020 12:13:35 PM      Upper                0.548                0.548                2.383
+09-Feb-2020  1:07:59 PM   09-Feb-2020  1:50:37 PM      Upper                0.711                0.711                2.400
+09-Feb-2020  2:46:43 PM   09-Feb-2020  5:05:27 PM    Lower 1                2.312                2.312                5.073
+09-Feb-2020  5:10:04 PM   09-Feb-2020  6:07:26 PM      Upper                0.956                0.956                0.734
+09-Feb-2020  6:09:56 PM   10-Feb-2020  7:08:00 AM      Upper               12.968                0.249                0.041
+10-Feb-2020  7:10:31 AM   10-Feb-2020  8:07:24 AM      Upper                0.948                0.948                0.431
+10-Feb-2020  8:09:55 AM   10-Feb-2020 10:41:25 AM      Upper                2.525                2.525                5.364
+10-Feb-2020 11:41:41 AM   10-Feb-2020 12:13:51 PM    Lower 1                0.536                0.536                2.395
+10-Feb-2020  1:09:12 PM   10-Feb-2020  1:50:25 PM      Upper                0.687                0.687                2.407
+</pre>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+<pre>Batteries selected for the last few files.: 
+    <strong>Date (GMT)             MOBfile         Battery Used     MO3 TT7 mains voltage</strong>
+05-Feb-2020 23:50:43   20020523                    1               11.842 
+06-Feb-2020 20:41:33   20020620                    2               11.815 
+06-Feb-2020 22:13:26   20020622                    1               11.648 
+06-Feb-2020 23:50:33   20020623                    1               11.613 
+07-Feb-2020 20:41:33   20020720                    1               12.346 
+07-Feb-2020 22:13:33   20020722                    2               11.818 
+07-Feb-2020 23:50:25   20020723                    1               11.783 
+08-Feb-2020 20:41:37   20020820                    1               12.034 
+08-Feb-2020 22:13:44   20020822                    2               11.715 
+08-Feb-2020 23:50:45   20020823                    1               11.591 
+09-Feb-2020 20:41:18   20020920                    1               11.554 
+09-Feb-2020 22:13:36   20020922                    2               11.632 
+09-Feb-2020 23:50:37   20020923                    1               11.651 
+10-Feb-2020 20:41:25   20021020                    1               11.516 
+10-Feb-2020 22:13:51   20021022                    1               11.466 
+10-Feb-2020 23:50:25   20021023                    2               11.534 
+</pre>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- DivTable.com -->
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
