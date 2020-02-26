@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MOBY deployment">                                   <!-- Description (basic name/content that must be added) -->
+    <meta name="keywords" content="MOBY, Marine Optical Buoy, Ocean Color, Calibration">  <!-- Keywords (basic name/content that must be added) -->
+    <meta name="author" content="Stephanie Flora">                                        <!-- Author (basic name/content that must be added) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOBY269 status</title>
+    <!-- https://fonts.google.com/?selection.family=Open+Sans -->
+    <!-- In css use  font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- This should be the lost find in the head -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+ </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img  class="logo" src="img\mobylogo.png" alt="logo">
+            <div class="nav-div">
+                <!-- INFO dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">Status</button>
+                    <div class="dropdown-content">
+                        <a href="status.html">Status</a>
+                        <a href="position.html">Current Position</a> 
+                        <a href="batteries.html">Batteries</a> 
+                    </div>
+                </div>
+                
+                <!-- DATA dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">Linux</button>
+                    <div class="dropdown-content">
+                        <a href="#">ddd</a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <!-- ---END OF HEAR/NAV --------------------------------------------- -->
+    <main>
+        <div class="main-div">
+            <div class="main-div2">
+                <h1 class="main-h1">MOBY269 Status</h1>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <!-- Start of colored status boxes -->
+                                    <div class="status-box mos-tt7 tooltip" style="background-color:#00FF00" >
+                                        <p><strong>MOS TT7</strong><hr>11.6071 V</p>
+                                        <span class="tooltiptext">Voltage measured during last MO3 file collected</span>
+                                    </div>
+                                    
+                                    <div class="status-box tooltip" style="background-color:#FFFF00" >
+                                        <p><strong>MOS TT7 Trend</strong><hr>down 0.376 V over 26.0 days</p>
+                                        <span class="tooltiptext">Trend of the TT7 voltages measured by MOBY for the whole deployment</span>
+                                    </div>
+                                    
+                                    <div class="status-box rel-hum tooltip" style="background-color:#CCCCCC">
+                                        <p><strong>System current</strong><hr>31.2309 amp</p>
+                                        <span class="tooltiptext">System current measured during last MO3 file collected</span>
+                                    </div>
+                                    <div class="status-box blue-array-c tooltip" style="background-color:#00FF00">
+                                        <p><strong>B array temp</strong><hr>-24.9948 C</p>
+                                        <span class="tooltiptext">Mean blue array measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box red-array-c tooltip" style="background-color:#00FF00">
+                                        <p><strong>R array temp</strong><hr>-32.2232 C</p>
+                                        <span class="tooltiptext">Mean red array measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box tilt tooltip" style="background-color:#00FF00">
+                                        <p><strong>Total tilt</strong><hr>1.1748 deg</p>
+                                        <span class="tooltiptext">Mean total tilt measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box rel-hum tooltip" style="background-color:#00FF00">
+                                        <p><strong>Rel  Hum</strong><hr>5.4496 %</p>
+                                        <span class="tooltiptext">Relative humidity measured during last MO3 file collected</span>
+                                    </div>
+
+                                    <div class="status-box mo3files tooltip" style="background-color:#00FF00">
+                                        <p><strong>MO3 files downloaded</strong><hr>3</p>
+                                        <span class="tooltiptext">Number of MO3 files on the last day file exist</span>
+                                    </div>
+
+                                    <div class="status-box logfiles tooltip" style="background-color:#00FF00">
+                                        <p><strong>LNX log files downloaded</strong><hr>120</p>
+                                        <span class="tooltiptext">Number of log files downloaded and date of last download</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <hr>
+                                    <table width="100%" class="m03files">
+                                        <tr>
+                                            <th>Last set of MO3 files downloaded:</th>
+                                            <th>
+                                               20021720.mo3&nbsp;&nbsp;
+                                               20021722.mo3&nbsp;&nbsp;
+                                               20021723.mo3&nbsp;&nbsp;
+                                            </th>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <table width="100%" class="tt7volts">
+                                        <caption>Table: MOS TT7 Mains voltages from MO3 files for the last day of data</caption>
+                                        <tr>
+                                            <th> </td>
+                                            <th>Last</th>
+                                            <th>1 day mean</th>
+                                            <th>1 day min</th>
+                                            <th>1 day max</th>
+                                            <th>Date</th>
+                                        </tr>
+                                        <tr>
+                                            <td>MOS TT7 Mains Voltage:</td>
+                                            <td>11.6422</td>
+                                            <td>11.6071</td>
+                                            <td>11.5201</td>
+                                            <td>11.7033</td>
+                                            <td>18-Feb-2020 00:37:39</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <table class="last_day" width="100%">
+                                        <caption>Table: Reading for the last day of the run_mos and batt_maint log files: 18-Feb-2020 17:05:29 to 17-Feb-2020 17:05:38 (1 day).
+                                       Zero values removed from the battery voltages, Art says it will read "0 volts if a measurement is attempted while the battery is being used for something else" </caption>
+                                       <tr bgcolor="#ADEBFF">
+                                       <th>Measurment</th>
+                                       <th>Mean</th>
+                                       <th>Min</th>
+                                       <th>Max</th>
+                                       <th>%std</th>
+                                       <th>comment</th>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">U0C0, main battery voltage:</td>
+                                       <td align="center">12.0967</td>
+                                       <td align="center">11.71</td>
+                                       <td align="center">12.59</td>
+                                       <td align="center">2.19</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">U0C7, falcon power supply bus:</td>
+                                       <td align="center">11.9549</td>
+                                       <td align="center">11.84</td>
+                                       <td align="center">12.12</td>
+                                       <td align="center">0.57</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">L0C12, lower battery 1 voltage:</td>
+                                       <td align="center">12.653</td>
+                                       <td align="center">12.5</td>
+                                       <td align="center">12.86</td>
+                                       <td align="center">1.09</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">L0C13, lower battery 2 voltage:</td>
+                                       <td align="center">12.626</td>
+                                       <td align="center">12.48</td>
+                                       <td align="center">12.86</td>
+                                       <td align="center">0.78</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">L0C14, lower battery 3 voltage:</td>
+                                       <td align="center">12.935</td>
+                                       <td align="center">12.92</td>
+                                       <td align="center">12.95</td>
+                                       <td align="center">0.08</td>
+                                       <td align="center">Disabled</td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">L0C15, lower battery 4 voltage:</td>
+                                       <td align="center">13.243</td>
+                                       <td align="center">12.93</td>
+                                       <td align="center">15.95</td>
+                                       <td align="center">7.18</td>
+                                       <td align="center">Disabled</td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">U0C1, heatsink temperature:</td>
+                                       <td align="center">24.9937</td>
+                                       <td align="center">24.98</td>
+                                       <td align="center">25.01</td>
+                                       <td align="center">0.04</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">U0C2, case air temperature:</td>
+                                       <td align="center">24.9858</td>
+                                       <td align="center">24.97</td>
+                                       <td align="center">25</td>
+                                       <td align="center">0.02</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">U0C3, case humidity:</td>
+                                       <td align="center">39.8687</td>
+                                       <td align="center">37.58</td>
+                                       <td align="center">42.34</td>
+                                       <td align="center">1.98</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">U0C4, +5APwr:</td>
+                                       <td align="center">5.0694</td>
+                                       <td align="center">4.99</td>
+                                       <td align="center">5.08</td>
+                                       <td align="center">0.30</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       <tr>
+                                       <td align="center">step time server</td>
+                                       <td align="center">-1.164</td>
+                                       <td align="center">-1.164</td>
+                                       <td align="center">-1.164</td>
+                                       <td align="center">0.00</td>
+                                       <td align="center"> </td>
+                                       </tr>
+                                       </table>
+                                    <hr>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                        <p>Position Map</p>
+                                        <img class="map-img zoom" src="img\nlx1_map3.png.png" alt="MOBY map" /> 
+                                    </div>
+                                    <div class="status-box">
+                                        <p>TT7 Main V</p>
+                                        <img class="map-img zoom" src="img\nv_17.png" alt="TT7 borad temperature" /> 
+                                    </div>
+                                    <div class="status-box">
+                                        <p>Main battery voltages</p>
+                                        <img class="map-img zoom" src="img\nx_020p01_001.png" alt="Main battery voltages" /> 
+                                    </div>
+                                    <div class="status-box">
+                                        <p>4 Lower Battery V</p>
+                                        <img class="map-img zoom" src="img\nx_020p08_001.png" alt="4 Lower Battery" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">  
+                                    <hr>
+                                    <table width="100%" class="batvolts">
+                                        <caption>Table: The last 10 batteries charged and the number of hours of daylight the charging occured in</caption>
+                                        <tr>
+                                            <th>Local Start Time</th>
+                                            <th>Local Stop Time</th>
+                                            <th>Charging Time (mins)</th>
+                                            <th>Battery</th>
+                                            <th>Total Charging</th>
+                                            <th>Daylight Charging</th>
+                                            <th>sum of cos(zen)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020  1:10:00 PM</td>
+                                            <td>16-Feb-2020  1:50:25 PM</td>
+                                            <td>40.42</td>
+                                            <td>Upper</td>
+                                            <td>0.674</td>
+                                            <td>0.674</td>
+                                            <td>2.464</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020  2:47:06 PM</td>
+                                            <td>16-Feb-2020  5:06:59 PM</td>
+                                            <td>139.90</td>
+                                            <td>Lower 1</td>
+                                            <td>2.332</td>
+                                            <td>2.332</td>
+                                            <td>5.258</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020  5:12:19 PM</td>
+                                            <td>16-Feb-2020  6:08:18 PM</td>
+                                            <td>56.00</td>
+                                            <td>Upper</td>
+                                            <td>0.933</td>
+                                            <td>0.933</td>
+                                            <td>0.765</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020  6:10:49 PM</td>
+                                            <td>17-Feb-2020  7:08:33 AM</td>
+                                            <td>777.73</td>
+                                            <td>Upper</td>
+                                            <td>12.962</td>
+                                            <td>0.249</td>
+                                            <td>0.052</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020  7:11:14 AM</td>
+                                            <td>17-Feb-2020  8:08:23 AM</td>
+                                            <td>57.15</td>
+                                            <td>Upper</td>
+                                            <td>0.953</td>
+                                            <td>0.953</td>
+                                            <td>0.510</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020  8:10:53 AM</td>
+                                            <td>17-Feb-2020 10:41:04 AM</td>
+                                            <td>150.20</td>
+                                            <td>Upper</td>
+                                            <td>2.503</td>
+                                            <td>2.503</td>
+                                            <td>5.621</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020 11:42:00 AM</td>
+                                            <td>17-Feb-2020 12:13:32 PM</td>
+                                            <td>31.53</td>
+                                            <td>Upper</td>
+                                            <td>0.526</td>
+                                            <td>0.526</td>
+                                            <td>2.465</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020  1:09:26 PM</td>
+                                            <td>17-Feb-2020  1:50:04 PM</td>
+                                            <td>40.65</td>
+                                            <td>Upper</td>
+                                            <td>0.677</td>
+                                            <td>0.677</td>
+                                            <td>2.475</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020  2:46:09 PM</td>
+                                            <td>17-Feb-2020  5:08:18 PM</td>
+                                            <td>142.15</td>
+                                            <td>Upper</td>
+                                            <td>2.369</td>
+                                            <td>2.369</td>
+                                            <td>5.313</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020  5:10:54 PM</td>
+                                            <td>17-Feb-2020  6:05:50 PM</td>
+                                            <td>54.95</td>
+                                            <td>Lower 2</td>
+                                            <td>0.916</td>
+                                            <td>0.916</td>
+                                            <td>0.795</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <table width="100%" class="batchrging">
+                                        <caption>Table: Batteries selected for the last few files</caption>
+                                        <tr>
+                                            <th>Date (GMT)</th>
+                                            <th>MOBfile</th>
+                                            <th>Battery Used</th>
+                                            <th>MO3 TT7 mains voltage</th>
+                                        </tr>
+                                        <tr>
+                                            <td>12-Feb-2020 23:50:26</td>
+                                            <td>20021223</td>
+                                            <td>1</td>
+                                            <td>11.660</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13-Feb-2020 20:41:33</td>
+                                            <td>20021320</td>
+                                            <td>2</td>
+                                            <td>12.046</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13-Feb-2020 22:13:49</td>
+                                            <td>20021322</td>
+                                            <td>1</td>
+                                            <td>11.635</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13-Feb-2020 23:50:35</td>
+                                            <td>20021323</td>
+                                            <td>1</td>
+                                            <td>11.541</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14-Feb-2020 20:41:26</td>
+                                            <td>20021420</td>
+                                            <td>2</td>
+                                            <td>11.727</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14-Feb-2020 22:13:36</td>
+                                            <td>20021422</td>
+                                            <td>2</td>
+                                            <td>11.778</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14-Feb-2020 23:50:33</td>
+                                            <td>20021423</td>
+                                            <td>2</td>
+                                            <td>11.710</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15-Feb-2020 20:41:27</td>
+                                            <td>20021520</td>
+                                            <td>2</td>
+                                            <td>11.825</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15-Feb-2020 22:14:13</td>
+                                            <td>20021522</td>
+                                            <td>2</td>
+                                            <td>11.872</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15-Feb-2020 23:50:38</td>
+                                            <td>20021523</td>
+                                            <td>2</td>
+                                            <td>12.082</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020 20:42:27</td>
+                                            <td>20021620</td>
+                                            <td>2</td>
+                                            <td>11.534</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020 22:13:40</td>
+                                            <td>20021622</td>
+                                            <td>1</td>
+                                            <td>11.540</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16-Feb-2020 23:50:25</td>
+                                            <td>20021623</td>
+                                            <td>2</td>
+                                            <td>11.631</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020 20:41:05</td>
+                                            <td>20021720</td>
+                                            <td>1</td>
+                                            <td>11.439</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020 22:13:32</td>
+                                            <td>20021722</td>
+                                            <td>2</td>
+                                            <td>11.377</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17-Feb-2020 23:50:05</td>
+                                            <td>20021723</td>
+                                            <td>1</td>
+                                            <td>11.607</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                </div>
+                            </div>
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                        <p>Summary graph which shows when all the logs files where created</p>
+                                        <img class="big-img" src="img\nx_002p00_002.png" alt="Summary graph which shows when all the logs files where created" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                       <p>HTML written on 18-Feb-2020 09:40:11 california time</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- DivTable.com -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

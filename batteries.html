@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MOBY deployment">                                   <!-- Description (basic name/content that must be added) -->
+    <meta name="keywords" content="MOBY, Marine Optical Buoy, Ocean Color, Calibration">  <!-- Keywords (basic name/content that must be added) -->
+    <meta name="author" content="Stephanie Flora">                                        <!-- Author (basic name/content that must be added) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOBY269 status</title>
+    <!-- https://fonts.google.com/?selection.family=Open+Sans -->
+    <!-- In css use  font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- This should be the lost find in the head -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+ </head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img  class="logo" src="img\mobylogo.png" alt="logo">
+            <div class="nav-div">
+                <!-- INFO dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">Status</button>
+                    <div class="dropdown-content">
+                        <a href="status.html">Status</a>
+                        <a href="position.html">Current Position</a> 
+                        <a href="batteries.html">Batteries</a> 
+                    </div>
+                </div>
+                
+                <!-- DATA dropdown menu -------------------- -->
+                <div class="dropdown">
+                    <button class="dropbtn">Linux</button>
+                    <div class="dropdown-content">
+                        <a href="#">ddd</a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <!-- ---END OF HEAR/NAV --------------------------------------------- -->
+    <main>
+        <div class="main-div">
+            <div class="main-div2">
+                <h1 class="main-h1">MOBY269 Batteries</h1>
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <!-- ----------------------------------------------- -->
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                        <p>A compliation of the batt_maint (BML) and run_mos (RML) logs for the U0C0, main battery voltage and U0C7, falcon power supply bus. The below graph is every reading from all the BML and RML files. The Main battery voltages are plotted for when charge is being provided by the solar panels (Cup) and when charge is being sent to the lower bank (Cdwn). </p>
+                                        <img class="big-img" src="img\nx_020p01_001.png" alt="Upper Batteries" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                        <p>This is a plot of the 4 lower batteries measured from a number of sources. The small dots are the measurments from the run_mos and batt_maint logs (unloaded) and the largers symbols are from the TT7 main volts saved in the MOBY file auxilliary data (loaded MOS running and coolers on). The black lines are the min and max of the voltages in the MOBY files. In addition Art saves to the linux log files a print out from MOS of the ADC data. The black star is the TT7 voltage (which ever lower battery is selected) unloaded. Which means MOS is on but the coolers are off. There should be two black stars for each MOBY file. They are collected at the beginning of aquisition and at the end when the coolers are off. The yellow circles are the MOS ADC data after the coolers have been on for 15 minutes. </p>
+                                        <img class="big-img" src="img\nx_020p08_001.png" alt="Lower Batteries" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                        <p>Art saves to the linux log files a print out from MOS of the ADC data. On the top panel the blue circles are the TT7 voltage (which ever lower battery is selected) unloaded, when MOS is first turned on. Which means MOS is on but the coolers are off. The yellow circles show the same data but after the coolers have been on for 15 minutes. The red square shows the voltage measured at the end of the data aquisition and after the coolers have been turned off. There should be 3 symbols for each MOBY file. The second panel shows the differenc between the blue and yellow symbols (unload to loaded or cooler off to on) and the yellow and red symbols (loaded to unloaded or coolers on to off). </p>
+                                        <img class="big-img" src="img\nx_020p09_001.png" alt="Lower Batteries loaded and unloaded" /> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell">
+                                    <div class="status-box">
+                                       <p>HTML written on 18-Feb-2020 09:40:11 california time</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- DivTable.com -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
